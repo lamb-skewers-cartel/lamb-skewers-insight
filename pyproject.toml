@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lamb-skewers-insight"
+version = "0.1.0"
+description = "R&D project using opendart API"
+authors = ["malkoG <rijgndqw012@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
