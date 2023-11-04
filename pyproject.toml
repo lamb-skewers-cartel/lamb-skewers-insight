@@ -8,8 +8,16 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 django = "^4.2.6"
+django-stubs = {extras = ["compatible-mypy"], version = "^4.2.6"}
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "core.settings"
